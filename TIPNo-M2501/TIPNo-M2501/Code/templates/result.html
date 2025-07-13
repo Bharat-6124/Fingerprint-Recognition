@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criminal Details</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #4CAF50, #81C784);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .details-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            text-align: left;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        .back-btn {
+            margin-top: 20px;
+            background: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    {% if details %}
+        <div class="details-card">
+            <h2>Criminal Details</h2>
+            <p><strong>Full Name:</strong> {{ details.FullName }}</p>
+            <p><strong>Phone:</strong> {{ details.Phone }}</p>
+            <p><strong>Address:</strong> {{ details.Address }}</p>
+            <p><strong>Gender:</strong> {{ details.Gender }}</p>
+            <p><strong>Date of Birth:</strong> {{ details.DateOfBirth }}</p>
+            <p><strong>Height:</strong> {{ details.Height }}</p>
+            <p><strong>Nationality:</strong> {{ details.Nationality }}</p>
+            <p><strong>Alleged Offence:</strong> {{ details.AllegedOffence }}</p>
+            <p><strong>Date of Arrest:</strong> {{ details.DateOfArrest }}</p>
+            <p><strong>Place of Arrest:</strong> {{ details.PlaceOfArrest }}</p>
+            <p><strong>Arresting Officer:</strong> {{ details.ArrestingOfficer }}</p>
+        </div>
+    {% else %}
+        <h2>No Match Found</h2>
+    {% endif %}
+    <a class="back-btn" href="/">Upload Another Fingerprint</a>
+</body>
+</html>

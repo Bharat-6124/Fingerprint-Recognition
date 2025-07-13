@@ -1,0 +1,95 @@
+{
+    "criminals": [
+      {
+        "CriminalID": 1,
+        "Name": "John Doe",
+        "ImageHash": "bc1f5325f9c612b4b68267fc3db6c290c1d681d0f0b7fe31972479b7582ee772",
+        "Details": {
+          "FullName": "Johnathan Doe",
+          "Phone": "1234567890",
+          "Address": "123 Elm Street",
+          "Gender": "Male",
+          "DateOfBirth": "1990-01-01",
+          "Height": "180 cm",
+          "Nationality": "American",
+          "AllegedOffence": "Theft",
+          "DateOfArrest": "2025-01-10",
+          "PlaceOfArrest": "New York",
+          "ArrestingOfficer": "Officer Smith"
+        }
+      },
+      {
+        "CriminalID": 2,
+        "Name": "Jane Smith",
+        "ImageHash": "38eb414a901a19212983b9ab6ea656ef3dfd260918077f999a3bda948b4b08ea",
+        "Details": {
+          "FullName": "Jane Alexandra Smith",
+          "Phone": "9876543210",
+          "Address": "456 Oak Street",
+          "Gender": "Female",
+          "DateOfBirth": "1985-07-15",
+          "Height": "170 cm",
+          "Nationality": "British",
+          "AllegedOffence": "Fraud",
+          "DateOfArrest": "2024-12-05",
+          "PlaceOfArrest": "London",
+          "ArrestingOfficer": "Officer Brown"
+        }
+      },
+      {
+        "CriminalID": 3,
+        "Name": "Alex Johnson",
+        "ImageHash": "02c1dca3dbd2c2e133ce2740b2d0542d62d8369268f1deba683e9f7110a7fee5",
+        "Details": {
+          "FullName": "Alexander Johnson",
+          "Phone": "1122334455",
+          "Address": "789 Pine Avenue",
+          "Gender": "Male",
+          "DateOfBirth": "1992-11-30",
+          "Height": "175 cm",
+          "Nationality": "Canadian",
+          "AllegedOffence": "Assault",
+          "DateOfArrest": "2025-01-15",
+          "PlaceOfArrest": "Toronto",
+          "ArrestingOfficer": "Officer Lee"
+        }
+      },
+      {
+        "CriminalID": 4,
+        "Name": "Emily Davis",
+        "ImageHash": "6d18b1dcf27edaeb2d87da3d270deee313d430af08f8b1a0e21beec112501a57",
+        "Details": {
+          "FullName": "Emily Rose Davis",
+          "Phone": "6677889900",
+          "Address": "101 Birch Road",
+          "Gender": "Female",
+          "DateOfBirth": "1998-03-22",
+          "Height": "165 cm",
+          "Nationality": "Australian",
+          "AllegedOffence": "Arson",
+          "DateOfArrest": "2024-11-20",
+          "PlaceOfArrest": "Sydney",
+          "ArrestingOfficer": "Officer Green"
+        }
+      },
+      {
+        "CriminalID": 5,
+        "Name": "Michael Brown",
+        "ImageHash": "7f97d2b17d4025025a8cffbe51f8c0714846f4783293b3c1c4a9e0d9aa8c5be2",
+        "Details": {
+          "FullName": "Michael Anthony Brown",
+          "Phone": "4455667788",
+          "Address": "202 Maple Drive",
+          "Gender": "Male",
+          "DateOfBirth": "1980-06-10",
+          "Height": "185 cm",
+          "Nationality": "American",
+          "AllegedOffence": "Homicide",
+          "DateOfArrest": "2025-01-01",
+          "PlaceOfArrest": "Los Angeles",
+          "ArrestingOfficer": "Officer Taylor"
+        }
+      }
+    ]
+  }
+  

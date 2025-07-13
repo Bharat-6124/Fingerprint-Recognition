@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fingerprint Upload</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9800, #ffc107);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="file"] {
+            margin: 10px 0;
+        }
+
+        button {
+            background: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e65100;
+        }
+
+        #processing {
+            display: none;
+            margin-top: 20px;
+        }
+
+        #processing p {
+            color: #e65100;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Fingerprint</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data" onsubmit="showProcessingMessage()">
+        <input type="file" name="image" required>
+        <button type="submit">Upload</button>
+        <div id="processing">
+            <p>Processing fingerprint... Please wait.</p>
+        </div>
+    </form>
+    <script>
+        function showProcessingMessage() {
+            document.getElementById("processing").style.display = "block";
+        }
+    </script>
+</body>
+</html>
